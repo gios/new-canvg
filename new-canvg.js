@@ -3004,7 +3004,7 @@
           svg.Mouse.runEvents(); // run and clear our events
         }
       }, 1000 / svg.FRAMERATE);
-      setTimeout(() => svg.stop(), 150);
+      setTimeout(function() { svg.stop(); }, 150);
     }
 
     svg.stop = function () {
